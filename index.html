@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Dawn Store</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiut Denim Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-white text-black font-sans">
-  <!-- Header -->
-  <header class="p-6 shadow-md flex justify-between items-center">
-    <h1 class="text-2xl font-bold">My Dawn Store</h1>
-    <nav class="space-x-4">
-      <a href="#home" class="hover:underline">Home</a>
-      <a href="#products" class="hover:underline">Products</a>
-      <a href="#contact" class="hover:underline">Contact</a>
-    </nav>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Hiut Denim</h1>
+      <nav class="site-nav">
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#about">About</a>
+        <a href="#guide">Guides</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="bg-gray-100 p-10 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Discover Our Collection</h2>
-    <p class="mb-6 text-gray-700">Shop the latest arrivals and timeless essentials.</p>
-    <button class="bg-black text-white px-4 py-2 rounded">Shop Now</button>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>We make jeans. That's it.</h2>
+      <p>Do one thing well.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
   </section>
 
-  <!-- Product Grid -->
-  <section id="products" class="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <!-- Repeat this card as needed -->
-    <div class="shadow hover:shadow-lg">
-      <img src="https://via.placeholder.com/300x300?text=Product+1" alt="Product 1" class="w-full h-64 object-cover" />
-      <div class="p-4">
-        <h3 class="text-lg font-semibold">Product 1</h3>
-        <p class="text-gray-600">$49.99</p>
-        <button class="bg-black text-white px-4 py-2 rounded mt-2 w-full">Add to Cart</button>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>We restarted a jeans company in a town that used to make 35,000 pairs a week. We are here to bring manufacturing back home.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <div class="container">
+      <h2>Featured Jeans</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/jean1.jpg" alt="Jeans 1">
+          <h3>The Classic</h3>
+          <p>$150</p>
+        </div>
+        <div class="product">
+          <img src="images/jean2.jpg" alt="Jeans 2">
+          <h3>The Slim</h3>
+          <p>$160</p>
+        </div>
+        <div class="product">
+          <img src="images/jean3.jpg" alt="Jeans 3">
+          <h3>The Tapered</h3>
+          <p>$155</p>
+        </div>
       </div>
     </div>
-    <div class="shadow hover:shadow-lg">
-      <img src="https://via.placeholder.com/300x300?text=Product+2" alt="Product 2" class="w-full h-64 object-cover" />
-      <div class="p-4">
-        <h3 class="text-lg font-semibold">Product 2</h3>
-        <p class="text-gray-600">$49.99</p>
-        <button class="bg-black text-white px-4 py-2 rounded mt-2 w-full">Add to Cart</button>
-      </div>
-    </div>
-    <!-- Add more cards as needed -->
   </section>
 
-  <!-- Newsletter Signup -->
-  <section class="bg-gray-100 p-10 text-center">
-    <h2 class="text-2xl font-bold mb-4">Join Our Newsletter</h2>
-    <p class="text-gray-600 mb-4">Get exclusive updates, deals, and more.</p>
-    <div class="flex justify-center gap-2">
-      <input type="email" placeholder="Enter your email" class="border px-4 py-2 w-64" />
-      <button class="bg-black text-white px-4 py-2 rounded">Subscribe</button>
+  <section id="guide" class="section">
+    <div class="container">
+      <h2>Fit Guide</h2>
+      <p>Use our detailed fit guide to find the perfect pair. Sizing, measurements, and material info provided.</p>
     </div>
   </section>
 
-  <!-- Contact Page -->
-  <section id="contact" class="bg-gray-50 p-10 text-center">
-    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-    <p class="text-gray-600 mb-4">We'd love to hear from you!</p>
-    <div class="flex flex-col items-center gap-4 max-w-md mx-auto">
-      <input type="text" placeholder="Your Name" class="border px-4 py-2 w-full" />
-      <input type="email" placeholder="Your Email" class="border px-4 py-2 w-full" />
-      <textarea placeholder="Your Message" class="border px-4 py-2 w-full h-24"></textarea>
-      <button class="bg-black text-white px-4 py-2 rounded">Send Message</button>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Hiut Denim Co. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white p-6 text-center">
-    <p>&copy; <span id="year"></span> My Dawn Store. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
